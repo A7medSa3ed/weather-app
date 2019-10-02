@@ -17,7 +17,7 @@ export class App extends Component {
     e.preventDefault();
     const city = e.target.elements.city.value;
     const country = e.target.elements.country.value;
-    const apiKey = process.env.REACT_APP_APP_ID;
+    const apiKey = "d828ad4d3d93b95b1a10769e5b576d9a";
     const apiData = await fetch(
       `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiKey}`
     );
